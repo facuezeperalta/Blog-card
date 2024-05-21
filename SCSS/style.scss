@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+$primary-yellow: hsl(47, 88%, 63%);
+$white-color:hsl(0, 0%, 100%);
+$gray-color:hsl(0, 0%, 50%);
+$black-color:hsl(0, 0%, 7%);
+$paragrapth: 1.6rem;
+$font-stack: "Figtree", sans-serif;
+$font-weigth-ligth: 500;
+$font-weigth-bold:800;
+$page-background-color:rgb(245, 208, 78);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: $page-background-color;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+html{
+    font-size: 62.5%;
+    font-family: $font-stack;
+}
+.post-link{
+    text-decoration: none;
+    color:black;
+    font-weight: 800;
+    &:hover{
+        color:$primary-yellow;
+        cursor: pointer;
+    }
+}
+
+.post-image{
+    padding: 2rem;
+    border-radius: 30px;
+}
+
+.section-container-main{
+    width: 80vw;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $white-color;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 10px 20px;
+}
+
+.post-content-container{
+    position: absolute;
+    top: 200px;
+    margin-left: 2rem;
+}
+
+.article-title{
+    display: flex;
+    width: 50px;
+    height: 20px;
+    background-color: $primary-yellow;
+    color: $black-color;
+    padding: 1.1rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.published-date{
+    margin-bottom: 1rem;
+}
+
+.title{
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.article-text{
+    color:$gray-color;
+    margin-bottom: 3rem;
+}
+
+.avatar-photo{
+    height: 30px;
+}
+
+.post-owner{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.post-owner-name{
+    margin-left: 1.5rem  ;
+    font-weight: 700;
+}
